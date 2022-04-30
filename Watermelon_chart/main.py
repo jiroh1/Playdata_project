@@ -1,6 +1,5 @@
 from gui import Chang
 
-
 if __name__ == '__main__':
     # 데이터 베이스 저장
     # save = MyClass()

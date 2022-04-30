@@ -1,6 +1,7 @@
 import cx_Oracle
 from crawling import Crawl
 
+
 class MyClass:
     def __init__(self):
         self.dsn = cx_Oracle.makedsn("localhost", 1521, 'xe') # 오라클 주소를 기입한다.

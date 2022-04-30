@@ -79,3 +79,4 @@ if __name__ == '__main__':
     c.singer_visualize(singer)
     like = c.l_count()
     c.like_visualize(like)
+

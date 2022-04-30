@@ -6,6 +6,7 @@ from selenium import webdriver
 from pprint import pprint
 
 
+
 class Crawl:
     @staticmethod
     def select(day):
