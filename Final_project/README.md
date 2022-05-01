@@ -12,13 +12,13 @@
 	<img width="705" alt="process" src="https://user-images.githubusercontent.com/75061809/166146712-df801617-07bf-4456-9a9d-2d21bfdeb3ba.png">
 
 <h2> 2. Execution_file</h2>
-	1) with annoy file, json file and model, execute file.
-	2) Put the pic -> using RESNET 18 , check predictive value .
-	3) Finding similar value and  output image and information
+	1) with annoy file, json file and model, execute file. <br>
+	2) Put the pic -> using RESNET 18 , check predictive value .<br>
+	3) Finding similar value and  output image and information. <br>
   <img width="1227" alt="smilar_picture" src="https://user-images.githubusercontent.com/75061809/166146687-90538981-07ee-483d-8351-41a64791d5d5.png">
-	4) Connecting MUSINSA page.
-	5) If want matching clothes( for example, if suggest top and want to find well-matched bottom), first, finding similar clothes(top) and finding matching clothes(bottom).al project) - recommendation service system
+	4) Connecting MUSINSA page.<br>
+	5) If want matching clothes( for example, if suggest top and want to find well-matched bottom), first, finding similar clothes(top) and finding matching clothes(bottom).al project) - recommendation service system. <br>
 <img width="1247" alt="matching_pic" src="https://user-images.githubusercontent.com/75061809/166146784-62832723-21d9-43e3-a3c9-4dfae542e7a6.png">
-  6) Have used server by AWS and PUTTY by uploading files.
-  7) Processing reference
+  6) Have used server by AWS and PUTTY by uploading files. <br>
+  7) Processing reference. <br>
 <img width="1083" alt="processing" src="https://user-images.githubusercontent.com/75061809/166146740-1191bdfd-b1b8-4169-afc0-d1fb11160c15.png">
