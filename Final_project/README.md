@@ -1,9 +1,9 @@
 # 'B-BLY'(Fin# 'B-BLY'(Final project) - recommendation service system
 
 <h2> 1. Data_set</h2>
-	1) Crawling pic of men's wearing in instagram <br>
+	1) Crawling pic of men's wearing on instagram <br>
   <img width="724" alt="crawling_insta" src="https://user-images.githubusercontent.com/75061809/166146661-7a67707a-ba6e-4596-8ef8-6acd2e1226f5.png">
-	2) Crawling information( pic, price, img_url., etc..) in MUSINSA.<br>
+	2) Crawling information( pic, price, img_url., etc..) on MUSINSA.<br>
   <img width="704" alt="crawling_musinsa" src="https://user-images.githubusercontent.com/75061809/166146760-83110e65-c636-4d91-a7f2-66d1f4889f4e.png">
 	3) Data preprocessing for cropping pic ( then, using object detection, detectron2 , cv2).<br>
 	4) By cropping , numbering and Indexing of the top and bottom are performed respectively. <br>
