@@ -19,6 +19,6 @@
 	4) Connecting MUSINSA page.<br>
 	5) If want matching clothes( for example, if suggest top and want to find well-matched bottom), first, finding similar clothes(top) and finding matching clothes(bottom).al project) - recommendation service system. <br>
 <img width="1247" alt="matching_pic" src="https://user-images.githubusercontent.com/75061809/166146784-62832723-21d9-43e3-a3c9-4dfae542e7a6.png">
-  6) Have used server by AWS and PUTTY by uploading files. <br>
+  6) Have used server by AWS and PUTTY by uploading files. (AWS : ubuntu , using tensorflow) <br>
   7) Processing reference. <br>
 <img width="1083" alt="processing" src="https://user-images.githubusercontent.com/75061809/166146740-1191bdfd-b1b8-4169-afc0-d1fb11160c15.png">
