@@ -14,13 +14,14 @@ sys.setrecursionlimit(5000)
 class Chang(tkinter.Tk):
     def __init__(self, parent) :
         tkinter.Tk.__init__(self, parent)
-        self.iconbitmap('C:/Users/Playdata/Downloads/watermelon.ico')
+        self.iconbitmap('./watermelon.ico')
         self.parent = parent
         self.searching()
         self.title('WATERMELON')
         self.geometry('750x1000')
         self.frame()
         self.Mydb = MyClass()
+
     def searching(self):
         # 기간설정버튼
         period_option = LabelFrame(self, text="검색하실 기간을 설정하세요 ")
@@ -39,11 +40,11 @@ class Chang(tkinter.Tk):
             like = c.l_count()
             c.like_visualize(like)
 
-        # for i in day_format:
         day_format.current(0)
         day_format.pack(side="left", padx=5, pady=5)
         button_period = tkinter.Button(period_option, bg='lightpink', padx=5, pady=5, width=12, text='기간설정', command = btncmd)
         button_period.pack(side="right", padx=5, pady=5)
+
         # 워드클라우드
         word_frame = LabelFrame(self, text="Wordcloud")
         word_frame.pack(fill='x', padx=3, pady=3)
@@ -61,9 +62,8 @@ class Chang(tkinter.Tk):
         self.entry.bind('<Return>', self.onPressEnter)
         # 검색버튼
         button_add_item = tkinter.Button(search_option,bg='lightpink',padx=5, pady=5, width = 12, text='검색', command = self.onButtonClick or self.onPressEnter )
-        #print(button_add_item,'<')
         button_add_item.pack(side="right",padx=5, pady=5)
-        #print(day_format.get())
+
         #라벨창
         self.labelValue = tkinter.StringVar()
         self.label = tkinter.Label(self, fg='IndianRed1', bg='lightgreen', textvariable=self.labelValue)
@@ -80,7 +80,8 @@ class Chang(tkinter.Tk):
         tree_add_item.pack(side="right", padx=5, pady=5)
         tree_add_item = tkinter.Button(tree_frame,bg='ivory', padx=5, pady=5, width=12, text='새로고침', command=self.treedelete)
         tree_add_item.pack(side="right", padx=5, pady=5)
-        # 컬럼 수
+
+        # 컬럼
         self.tree["columns"] = ("one","two","three","four","five","six","seven")
         self.tree.heading("#1", text="순위")
         self.tree.heading("#2", text="제목")
@@ -98,16 +99,15 @@ class Chang(tkinter.Tk):
         self.tree.column("#6", width=100, anchor="w")
         self.tree.column("#7", width=100, anchor="w")
         self.tree.pack(expand=True,fill='both')
+
         #실행
         btn_close = tkinter.Button(self,bg='ivory', padx=5, pady=5, text="닫기", width=12, command=self.quit)
         btn_close.pack(side="right", padx=5, pady=5)
         btc_start = tkinter.Button(self, bg='ivory', padx=5, pady=5, text="csv file 저장", width=12, command=self.save_text)
         btc_start.pack(side="right", padx=5, pady=5)
         btn_start = tkinter.Button(self,bg='ivory', padx=5, pady=5, text="사진저장", width=12, command=self.save_pic)
-        #만든이
         btn_start.pack(side="right", padx=5, pady=5)
-        btn_credit = tkinter.Button(self,bg='ivory', padx=5, pady=5, text="만든이들", width=12, command=self.credit)
-        btn_credit.pack(side="right", padx=5, pady=5)
+
 
     def get_opr(self):
         return self.opr
@@ -116,15 +116,18 @@ class Chang(tkinter.Tk):
         self.labelValue.set(self.entryValue.get() + '를 조회하시겠어요?')
         self.opr = self.entryValue.get()
         self.entryValue.set('')
+
     # 검색시 기능 function
     def onButtonClick(self):
         self.labelValue.set(self.entryValue.get() + '를 조회하시겠어요?')
         self.opr = self.entryValue.get()
+
     #검색창 Values
     def treeview(self):
         j = self.Mydb.find_all(self.opr)
         for i in j:
            self.tree.insert('','end',values= i)
+
     #사진 저장
     def save_pic(self):
         j = self.Mydb.find_all(self.opr)
@@ -134,6 +137,7 @@ class Chang(tkinter.Tk):
         for idx, p in enumerate(lst,1):
             # 다운 받을 폴더 경로 입력
             urllib.request.urlretrieve(p, "c:/image/" + str(idx) + ".jpg")
+
     #csv file 저장
     def save_text(self):
         f = open('WaterMelon.csv', 'w', encoding='utf-8', newline='')
@@ -145,10 +149,12 @@ class Chang(tkinter.Tk):
         for i in lst :
             wr.writerow([i])
         f.close()
+
     def treedelete(self): # <---treeview 삭제...
         for i in self.tree.get_children():
             self.tree.delete(i)
         self.tree.update()
+
     # Word cloud 저장
     def singer_word(self):
         img = PhotoImage(file='singer_visualize.gif')  # <----여기에다가 클라우드 들어가는 경로 넣으면 됨!!
@@ -184,11 +190,6 @@ class Chang(tkinter.Tk):
         self.pop_image.place(x=23, y=0)
         self.pop_up.mainloop()
         self.reload()
-
-    def credit(self):
-        credit = Toplevel(self)
-        lb = Label(credit, text="김유진, 박민회, 이정훈, 이주영, 신정훈")
-        lb.pack()
 
 if __name__ == '__main__':
     m1 = Chang(None)
