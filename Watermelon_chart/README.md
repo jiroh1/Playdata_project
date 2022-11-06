@@ -6,7 +6,7 @@
 ‣ crawling.py : 멜론차트의 일간/주간/월간 차트를 가져옴  
 ‣ database.py : 가져온 차트를 SQL에 저장  
 ‣ gui.py : 서비스 화면을 구성  
-‣ main.py : 서비스 실행  (해당파일을 키면 연동)
+‣ main.py : 서비스 실행  (해당파일을 키면 연동)  
 ‣ mongoDB.py : 앨범 재킷을 MongoDB에 저장
 
-#### 권장 OS : window 
+#### 개발환경 ? Python 3.8, MongoDB 4.4, SQL 11.2 , Window 에서 사용 권장
