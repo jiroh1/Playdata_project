@@ -9,7 +9,7 @@
 	4) By cropping , numbering and Indexing of the top and bottom are performed respectively. <br>
 	5) Saving information(crawling on 2)) on csv. <Br>
 	6) Process searching as below pic.
-	<img width="705" alt="process" src="https://user-images.githubusercontent.com/75061809/166146712-df801617-07bf-4456-9a9d-2d21bfdeb3ba.png">
+	<img width="901" alt="B-BLY_architecture" src="https://user-images.githubusercontent.com/75061809/217807651-a6bdc412-c3d3-4725-8352-98ea5c8a7448.png">
 
 <h2> 2. Execution_file</h2>
 	1) with annoy file, json file and model, execute file. <br>
@@ -21,4 +21,5 @@
 <img width="1247" alt="matching_pic" src="https://user-images.githubusercontent.com/75061809/166146784-62832723-21d9-43e3-a3c9-4dfae542e7a6.png">
   6) Have used server by AWS and PUTTY by uploading files. (AWS : ubuntu , using tensorflow) <br>
   7) Processing reference. <br>
-<img width="1083" alt="processing" src="https://user-images.githubusercontent.com/75061809/166146740-1191bdfd-b1b8-4169-afc0-d1fb11160c15.png">
+<img width="2478" alt="B-BLY_service" src="https://user-images.githubusercontent.com/75061809/217807873-b4a60115-67a0-4213-8d46-c14795971482.png">
+
